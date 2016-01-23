@@ -1,4 +1,3 @@
-# Doxynum
 Doxynum is a program for automatic numbering of sections and drawings, as well as for creating contents in documentation, generated using the Doxygen software (www.doxygen.org).
 
 1. Introduction
@@ -104,4 +103,4 @@ The program has been tested with the version 1.8.6 of Doxygen.
 
 7. The author
 
-Sergey Vasyutin (svpro at outlook.com)
+Sergey Vasyutin (svpro (at) outlook.com)

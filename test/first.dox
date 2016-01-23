@@ -1,0 +1,45 @@
+/*!
+
+\page #title{page1||page1_ref|First page}
+
+\section #title{section_1_1|page1|section_1_1_ref|The first section of the first page}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+culpa qui officia deserunt mollit anim id est laborum (see fig. #number{figure_1_1_1}).
+
+<CENTER>
+#image{images/sample.jpg|60}
+Fig. #figure{figure_1_1_1|The first image of the first section of the first page}
+</CENTER>
+
+\section #title{section_1_2|page1|section_1_2_ref|The second section of the first page}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua (see fig. #number{figure_1_2_1}). 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+ex ea commodo consequat (see chapter #number{section_1_1}). 
+
+<CENTER>
+#image{images/sample.jpg|60}
+Fig. #figure{figure_1_2_1|The first image of the second section of the first page}
+</CENTER>
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+culpa qui officia deserunt mollit anim id est laborum (see fig. #number{figure_1_2_1}).
+
+<CENTER>
+#image{images/sample.jpg|60}
+Fig. #figure{figure_1_2_2|The second image of the second section of the first page}
+</CENTER>
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+fugiat nulla pariatur (see fig. #number{figure_1_2_2}). Excepteur sint occaecat 
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+laborum (see page #number{page2}).
+
+*/
