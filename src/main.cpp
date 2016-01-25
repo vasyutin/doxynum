@@ -42,7 +42,7 @@ std::cout <<
 << " is a program for automatic numbering of sections and drawings,\n"
 "as well as for creating contents in documentation, generated using the\n"
 "doxygen software (www.doxygen.org). The author is Sergey Vasyutin\n"
-"(sv.public@yandex.ru).\n"
+"(svpro [at] outlook.com).\n"
 "\n"                                                                                    
 "During the pre-processing the program starts from the command line using\n"
 "the following arguments:\n"

@@ -1,29 +1,31 @@
 # Doxynum
 Doxynum is a program for automatic numbering of sections and drawings, as well as for creating contents in documentation, generated using the Doxygen software (www.doxygen.org).
 
-1. Introduction
+## 1. Introduction
 
 Doxygen is a powerful tool for the development of documentation. It is used in many projects for preparation of API descriptions and manuals for programmers. However, it doesn't have the function of auto numbering of sections and drawings, creating contents for the sections that are located in different files.
 
 These features are almost not necessary when preparing API descriptions. However, in many cases it is convenient to use Doxygen for the creation of electronic documents of other types, for example, user manuals, descriptions of products and others. It is associated with ability of Doxygen to support powerful features of formatting documents, which are well-known among programmers and used in the process of preparing API descriptions. The use of Doxygen for writing any other project documentation can make life of developers a little easier in case when the documentation and code are written by the same people. In this case the auto numbering of sections and drawings, which currently are not presented in Doxygen, will be very useful.
 
 
-2. Operation principle
+## 2. Operation principle
 
 The usage of the program consists of two phases: pre-processing and filtering. During the pre-processing stage the program searches sections and images in source files. Then it numbers them and writes the numbers in a special file, which is used during filtration stage. 
 
 At the stage of filtration Doxygen filters the contents of all processed files through Doxynum program. At the same time the program adds to the text numbers of sections and drawings from the file received at the first stage. Also, if it was set, inserts the table of contents, containing the sections titles up to a specified level of hierarchy.
 
 
-3. Tags
+## 3. Tags
 
 To ensure that the program is able to find sections and images in text, we use special tags: #title, #figure. To insert the link with the number of section or drawing into text, we apply the tag #number. For easier insertion of images into text, use the tag #image.
 
 The tag is accompanied by one or more parameters, which are followed in curly brackets and separated by vertical line, for example,
 
+```
 #title{main_section|top_section|main_section_ref|Main section}
+```
 
-3.1. Tag #title
+### 3.1. Tag #title
 
 #title tag is used to denote the header section. The tag is accompanied by the following parameters:
 1) The mark of section for references to it in tags, for example, in tag #number.
@@ -33,7 +35,7 @@ The tag is accompanied by one or more parameters, which are followed in curly br
 
 When processing text instead of tag #title Doxynum inserts section number and its name.
 
-3.2. Tag #figure
+### 3.2. Tag #figure
 
 Tag #figure is used to denote caption. The tag is accompanied by two parameters:
 1) The mark of image for references to it in the tag #number.
@@ -41,24 +43,24 @@ Tag #figure is used to denote caption. The tag is accompanied by two parameters:
 
 When processing text instead of tag #figure Doxynum inserts figure number and its name.
 
-3.3. Tag #number
+### 3.3. Tag #number
 
 The tag #number is used to insert section or drawing number into the text. The tag uses only one parameter - the section or picture tag. When processing text instead of tag #number Doxynum inserts number of specified section of drawing.
 
-3.4. Tag #toc
+### 3.4. Tag #toc
 
 Tag #toc is used to insert in the text a table of contents. This tag uses the only integer parameter - the number of header levels, which fall into the table of contents. For example, for tag #toc{2} will be created the contents consisting of two levels.
 
-3.5. Tag #image
+### 3.5. Tag #image
 
 Tag #image is used to generate commands for insertion of the specified image in the text. The tag is accompanied by two parameters:
-1) Name of the image file (supported formats and types of files that are available in Doxygen);
-2) Width of image in a percentage of the width of the page. Only used when generating documentation in RTF format.
+1. Name of the image file (supported formats and types of files that are available in Doxygen);
+2. Width of image in a percentage of the width of the page. Only used when generating documentation in RTF format.
 
 Examples of tags in documentation files can be viewed in the example, which comes with the software.
 
 
-4. Running the program 
+##4. Running the program 
 
 During the pre-processing the program starts from the command line using the following arguments:
 
@@ -85,7 +87,7 @@ Each time you start the program Doxygen adds the name of the source file to the 
 Sample scripts and configuration files for Doxygen, used to launch Doxynum, are supplied with the program.
 
 
-5. Installing the software
+## 5. Installing the software
 
 The executable file for Windows can be downloaded at http://sourceforge.net/projects/doxynum/files. The file is distributed as a ZIP archive, with the name Doxynum_win_executable_X.X. zip, where X.X is the version number. Extract the executable file from the archive and put it in the directory that is listed in your PATH environment variable, to ensure that it can be called from a command prompt.
 
@@ -97,11 +99,11 @@ make install
 The last command will require administrator rights.
 
 
-6. Software Requirements
+## 6. Software Requirements
 
 The program has been tested with the version 1.8.6 of Doxygen.
 
 
-7. The author
+## 7. The author
 
-Sergey Vasyutin (svpro at outlook.com)
+Sergey Vasyutin (svpro [at] outlook.com)
