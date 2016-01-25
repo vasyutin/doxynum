@@ -1,0 +1,8 @@
+# Creating example HTML set in /tmp/doxynum_example
+cd ..
+doxynum -l files.lst -d /tmp/doxynum-wap.db -i /tmp/doxynum-wap.list
+rm /tmp/wap-rtf-doxyfile
+cp scripts/Doxyfile.linux /tmp/wap-html-doxyfile
+echo '#' >> /tmp/wap-html-doxyfile
+cat /tmp/doxynum-wap.list >> /tmp/wap-html-doxyfile
+doxygen /tmp/wap-html-doxyfile
