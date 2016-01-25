@@ -86,9 +86,9 @@ Sample scripts and configuration files for Doxygen, used to launch Doxynum, are 
 
 5. Installing the software
 
-The executable file for Windows can be downloaded at http://sourceforge.net/projects/doxynum/files. The file is distributed as a ZIP archive, with the name Doxynum_win_executable_X.X. zip, where X.X is the version number. Extract the executable file from the archive and put it in the directory that is listed in your PATH environment variable, to ensure that it can be called from a command prompt.
+The executable file for Windows can be downloaded at https://github.com/vasyutin/doxynum/releases. The file is distributed as a ZIP archive, with the name Doxynum_win_executable_X.X. zip, where X.X is the version number. Extract the executable file from the archive and put it in the directory that is listed in your PATH environment variable, to ensure that it can be called from a command prompt.
 
-Installing the program in the Linux operating system is made from the source. Download archive with source code of the program at http://sourceforge.net/projects/doxynum/files. Source texts are located in the archive with the name Doxynum_src_X.X. zip, where X.X is the version number of file source texts. Unzip the sources in any convenient directory. Then chdir to the subdirectory project/linux and run the commands
+Installing the program in the Linux operating system is made from the source. Download archive with source code of the program at https://github.com/vasyutin/doxynum/releases. Unzip the sources in any convenient directory. Then chdir to the subdirectory project/linux and run the commands
 
 make
 make install
@@ -103,4 +103,4 @@ The program has been tested with the version 1.8.6 of Doxygen.
 
 7. The author
 
-Sergey Vasyutin (svpro (at) outlook.com)
+Sergey Vasyutin (svpro [at] outlook.com)
