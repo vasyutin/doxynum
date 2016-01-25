@@ -27,7 +27,7 @@ The tag is accompanied by one or more parameters, which are followed in curly br
 
 ### 3.1. Tag #title
 
-#title tag is used to denote the header section. The tag is accompanied by the following parameters:
+Tag #title is used to denote the header section. The tag is accompanied by the following parameters:
 1) The mark of section for references to it in tags, for example, in tag #number.
 2) The mark of the parent section (section of an upper level, which includes the current section). If described section of upper level of the hierarchy, this parameter is left blank.
 3) The mark, which is used in Doxygen's tags \link for the cross-reference to the section. Also the tag is used to create a reference to the section in the table of contents.
@@ -64,6 +64,7 @@ Examples of tags in documentation files can be viewed in the example, which come
 
 During the pre-processing the program starts from the command line using the following arguments:
 
+```
 doxynum -l <file with the list of files to be processed> -d <database of sections and drawings>
 [-i <list of source files for Doxygen configuration file>]
 
@@ -73,14 +74,18 @@ doxynum -l <file with the list of files to be processed> -d <database of section
 gained as the result of pre-processing. Is used during the filtering stage.
 
 -i <list of source files for Doxygen configuration file> - name of the file, into which we will write list of source files in a format of INPUT directive of the configuration file for Doxygen (optional parameter). The text of form 'INPUT=<list of files>' is written to the file. It can be added to the Doxygen configuration file to specify the list of files to be processes in the specified order (see how the argument is use in the example, provided with the program).
+```
 
 In the filtering mode the program is launched by Doxygen, each time passing it the name of the source file to be processed. To start the program in this mode, you must add the the specified line to the Doxygen configuration file (this will tell Doxygen to use Doxynum as a filter).
+
+```
 
 INPUT_FILTER = "doxynum -d <database of sections and drawings> [-o <directory for debugging>] -f"
 
 -d <database of sections and drawings> - database with numbers of sections and drawings, gained as the result of pre-processing stage.
 
 -o <directory for debugging> - directory, to which saved the results of filtration for each of the processed files (optional parameter). Can be used for debugging purposes to view what gets into Doxygen from the output of Doxynum.
+```
 
 Each time you start the program Doxygen adds the name of the source file to the line, indicated in the directive INPUT_FILTER. The result of filtration is supplied to the input of Doxygen. To view the result of filtering for debugging purposes you can use the argument -o in the Doxynum command prompt. 
 
