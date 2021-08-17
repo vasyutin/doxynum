@@ -117,4 +117,4 @@ The program has been tested with the version 1.8.6 of Doxygen.
 
 ## 7. The author
 
-Sergey Vasyutin (svpro [at] outlook.com)
+Sergey Vasyutin (sergey [at] vasyut.in)
